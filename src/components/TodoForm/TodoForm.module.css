@@ -1,0 +1,31 @@
+.form {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-bg-main);
+  padding: 1rem;
+}
+
+.input {
+  width: 80%;
+  height: 2.3rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.add {
+  width: 20%;
+  height: 2.3rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.add:hover {
+  opacity: 0.8;
+}

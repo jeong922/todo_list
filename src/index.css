@@ -1,0 +1,64 @@
+:root {
+  --color-bg-base: #ecf6fd;
+  --color-bg-main: #8aacc8;
+  --color-text: #0a0a0a;
+  --color-accent: #ff386a;
+  --color-gray: #9b9b9b;
+  --color-white: #ececec;
+}
+
+html.dark {
+  --color-bg-base: #303941;
+  --color-bg-main: #0d181d;
+  --color-text: #ececec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  accent-color: var(--color-accent);
+  background: rgb(16, 24, 28);
+  background: linear-gradient(
+    34deg,
+    rgba(16, 24, 28, 1) 0%,
+    rgba(52, 60, 71, 1) 100%
+  );
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}

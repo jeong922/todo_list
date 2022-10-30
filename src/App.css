@@ -1,0 +1,10 @@
+.container {
+  width: 380px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--color-bg-base);
+  border-radius: 10px;
+  box-shadow: 0 5px 18px -7px rgb(53, 53, 53);
+}
