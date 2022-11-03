@@ -21,8 +21,8 @@ export default function TodoForm({ onAdd }) {
     <form className={styles.form} onSubmit={handleSubmit}>
       <input
         className={styles.input}
-        type="text"
-        placeholder="Add Todo"
+        type='text'
+        placeholder='Add Todo'
         value={todo}
         onChange={handleChange}
       />

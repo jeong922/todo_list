@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './Todo.module.css';
-import { FaTrashAlt } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 
 export default function Todo({ todo, onDelete, onUpdate }) {
   const { text, state, id } = todo;
   const handleState = (e) => {
     onUpdate({ ...todo, state: e.target.checked ? 'completed' : 'active' });
+  };
+  const handleText = (e) => {
+    onUpdate({ ...todo, text: e.target.value });
   };
 
   const handleDelete = () => onDelete(todo);
@@ -15,15 +18,13 @@ export default function Todo({ todo, onDelete, onUpdate }) {
       <input
         onChange={handleState}
         className={styles.check}
-        type="checkbox"
+        type='checkbox'
         checked={state === 'completed'}
         id={id}
       />
-      <label className={styles.todo} htmlFor={id}>
-        {text}
-      </label>
+      <input className={styles.todo} value={text} onChange={handleText} />
       <button className={styles.delete} onClick={handleDelete}>
-        <FaTrashAlt />
+        <AiOutlineClose />
       </button>
     </li>
   );

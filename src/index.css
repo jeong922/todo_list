@@ -1,9 +1,9 @@
 :root {
-  --color-bg-base: #ecf6fd;
-  --color-bg-main: #8aacc8;
+  --color-bg-base: #fdf5f4;
+  --color-bg-main: #ffcece;
   --color-text: #0a0a0a;
   --color-accent: #ff386a;
-  --color-gray: #9b9b9b;
+  --color-gray: #7a7a7a;
   --color-white: #ececec;
 }
 
@@ -11,6 +11,7 @@ html.dark {
   --color-bg-base: #303941;
   --color-bg-main: #0d181d;
   --color-text: #ececec;
+  --color-gray: #9b9b9b;
 }
 
 * {

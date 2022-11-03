@@ -14,8 +14,12 @@
 .todo {
   width: 80%;
   word-break: break-all;
+  font-size: 1rem;
   margin-right: 10px;
+  background-color: transparent;
   color: var(--color-text);
+  outline: none;
+  border: none;
 }
 
 .delete {
