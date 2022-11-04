@@ -25,6 +25,7 @@ export default function TodoForm({ onAdd }) {
         placeholder='Add Todo'
         value={todo}
         onChange={handleChange}
+        spellcheck='false'
       />
       <button className={styles.add}>Add</button>
     </form>

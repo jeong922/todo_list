@@ -22,7 +22,12 @@ export default function Todo({ todo, onDelete, onUpdate }) {
         checked={state === 'completed'}
         id={id}
       />
-      <input className={styles.todo} value={text} onChange={handleText} />
+      <input
+        className={styles.todo}
+        value={text}
+        onChange={handleText}
+        spellcheck='false'
+      />
       <button className={styles.delete} onClick={handleDelete}>
         <AiOutlineClose />
       </button>
