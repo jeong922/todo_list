@@ -23,7 +23,9 @@ export default function Todo({ todo, onDelete, onUpdate }) {
         id={id}
       />
       <input
-        className={styles.todo}
+        className={`${
+          state === 'completed' ? styles.todo_Completed : styles.todo_Acticv
+        } ${styles.todo}`}
         value={text}
         onChange={handleText}
         spellcheck='false'

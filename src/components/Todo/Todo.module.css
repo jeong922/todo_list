@@ -22,6 +22,14 @@
   border: none;
 }
 
+.todo_Acticv {
+  color: var(--color-text);
+}
+
+.todo_Completed {
+  color: gray;
+}
+
 .delete {
   display: flex;
   justify-content: center;
